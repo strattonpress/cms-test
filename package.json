@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "npm run bundle && npm-run-all --parallel watch serve",
+    "start": "node public/main.js && npm run bundle && npm-run-all --parallel watch serve",
     "bundle": "webpack",
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
